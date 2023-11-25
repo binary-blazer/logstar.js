@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+      "target": "ES2022",
+      "module": "CommonJS",
+      "lib": [ "ES2022" ],
+      "allowJs": false,
+      "noEmit": true,
+      "allowImportingTsExtensions": true,
+      "declaration": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "skipLibCheck": true,
+      "importHelpers": true,
+      "moduleResolution": "node",
+      "baseUrl": ".",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "types": [ "node" ],
+  },
+  "include": [ 
+      "src/**/*.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "dist"
+  ]
+}

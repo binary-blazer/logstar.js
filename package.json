@@ -1,0 +1,29 @@
+{
+  "name": "logstar.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "format:write": "prettier --write \"src/**/*.ts\"",
+    "npm:login": "npm login",
+    "npm:publish:latest": "npm run format:write && npm run build && npm run npm:login && npm publish --tag latest",
+    "npm:publish:beta": "npm run format:write && npm run build && npm run npm:login && npm publish --tag beta"
+  },
+  "keywords": [],
+  "author": "Jonas Franke <@binaryblazer>",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "3.1.0",
+    "typescript": "^5.3.2"
+  }
+}
